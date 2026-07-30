@@ -1,0 +1,27 @@
+{
+  "name": "trip-split-app",
+  "version": "1.0.0",
+  "description": "An app to take expanse logs by users and split the bills after the trip ends.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajay121code/trip-split-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ajay121code/trip-split-app/issues"
+  },
+  "homepage": "https://github.com/Ajay121code/trip-split-app#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.5.0"
+  }
+}
