@@ -13,13 +13,13 @@ async function comparePasswords(password, hashedPassword) {
 }
 
 function generateToken(payload) {
-  const secretKey = process.env.JWT_SECRET || 'FuqB43RcWup10R7eS6krNhbs1E9BiDAJFqAn5Te2Wcz';
+  const secretKey = process.env.JWT_SECRET;
   const token = jwt.sign(payload, secretKey, { expiresIn: '1h' });
   return token;
 }
 
 function verifyToken(token) {
-  const secretKey = process.env.JWT_SECRET || 'FuqB43RcWup10R7eS6krNhbs1E9BiDAJFqAn5Te2Wcz';
+  const secretKey = process.env.JWT_SECRET;
   try {
     const decoded = jwt.verify(token, secretKey);
     return decoded;
